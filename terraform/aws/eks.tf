@@ -245,6 +245,25 @@ resource aws_subnet "eks_subnet1" {
     "kubernetes.io/cluster/$$$${local.eks_name.value}"               = "shared"
     "kubernetes.io/cluster/$$${local.eks_name.value}"                = "shared"
     "kubernetes.io/cluster/$${local.eks_name.value}"                 = "shared"
+    }, {
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$$$$${local.eks_name.value}" = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$$$${local.eks_name.value}"  = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$$${local.eks_name.value}"   = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$${local.eks_name.value}"    = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$${local.eks_name.value}"     = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$${local.eks_name.value}"      = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$${local.eks_name.value}"       = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$${local.eks_name.value}"        = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$${local.eks_name.value}"         = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$${local.eks_name.value}"          = "shared"
+    "kubernetes.io/cluster/$$$$$$$$${local.eks_name.value}"           = "shared"
+    "kubernetes.io/cluster/$$$$$$$${local.eks_name.value}"            = "shared"
+    "kubernetes.io/cluster/$$$$$$${local.eks_name.value}"             = "shared"
+    "kubernetes.io/cluster/$$$$$${local.eks_name.value}"              = "shared"
+    "kubernetes.io/cluster/$$$$${local.eks_name.value}"               = "shared"
+    "kubernetes.io/cluster/$$$${local.eks_name.value}"                = "shared"
+    "kubernetes.io/cluster/$$${local.eks_name.value}"                 = "shared"
+    "kubernetes.io/cluster/$${local.eks_name.value}"                  = "shared"
   })
 }
 
@@ -435,6 +454,25 @@ resource aws_subnet "eks_subnet2" {
     "kubernetes.io/cluster/$$$${local.eks_name.value}"               = "shared"
     "kubernetes.io/cluster/$$${local.eks_name.value}"                = "shared"
     "kubernetes.io/cluster/$${local.eks_name.value}"                 = "shared"
+    }, {
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$$$$${local.eks_name.value}" = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$$$${local.eks_name.value}"  = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$$${local.eks_name.value}"   = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$$${local.eks_name.value}"    = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$$${local.eks_name.value}"     = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$$${local.eks_name.value}"      = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$$${local.eks_name.value}"       = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$$${local.eks_name.value}"        = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$$${local.eks_name.value}"         = "shared"
+    "kubernetes.io/cluster/$$$$$$$$$${local.eks_name.value}"          = "shared"
+    "kubernetes.io/cluster/$$$$$$$$${local.eks_name.value}"           = "shared"
+    "kubernetes.io/cluster/$$$$$$$${local.eks_name.value}"            = "shared"
+    "kubernetes.io/cluster/$$$$$$${local.eks_name.value}"             = "shared"
+    "kubernetes.io/cluster/$$$$$${local.eks_name.value}"              = "shared"
+    "kubernetes.io/cluster/$$$$${local.eks_name.value}"               = "shared"
+    "kubernetes.io/cluster/$$$${local.eks_name.value}"                = "shared"
+    "kubernetes.io/cluster/$$${local.eks_name.value}"                 = "shared"
+    "kubernetes.io/cluster/$${local.eks_name.value}"                  = "shared"
   })
 }
 
