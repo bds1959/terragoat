@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = AKIAXPXIDEH66NCWVFTP
-  secret_key = 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
+  access_key = "AKIAXPXIDEH66NCWVFTP"
+  secret_key = "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"
   region     = "us-west-2"
 }
 
