@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "var.aws_access_key_id"
-  secret_key = "var.aws_secret_access_key"
+  access_key = var.access_key
+  secret_key = var.secret_key
   region     = "us-west-2"
 }
 
@@ -27,7 +27,7 @@ resource "aws_security_group" "ssh_traffic" {
 }
 
 resource "aws_instance" "web_server_instance" {
-  ami             = data.aws_ami.ubuntu.id
+  ami             = "ami-013f17f36f8b1fefb" # data.aws_ami.ubuntu.id
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
@@ -41,20 +41,4 @@ resource "aws_instance" "web_server_instance" {
     git_repo             = "terragoat"
     yor_trace            = "0a64290e-f8a7-432e-925f-beb407a5da08"
   }
-}
-
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  owners = ["514809078269"] # Canonical
 }
