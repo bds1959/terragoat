@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = access_key
-  secret_key = secret_key
+  access_key = AKIAXPXIDEH66NCWVFTP
+  secret_key = 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
   region     = "us-west-2"
 }
 
@@ -27,7 +27,7 @@ resource "aws_security_group" "ssh_traffic" {
 }
 
 resource "aws_instance" "web_server_instance" {
-  ami             = "ami-013f17f36f8b1fefb" # data.aws_ami.ubuntu.id
+  ami             = "ami-090717c950a5c34d3"
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
