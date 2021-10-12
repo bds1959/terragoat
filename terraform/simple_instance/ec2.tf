@@ -26,7 +26,7 @@ resource "aws_security_group" "ssh_traffic" {
   }
 }
 
-resource "aws_instance" "web_server_instance" {
+resource "aws_instance" "web_instance" {
   ami             = "ami-090717c950a5c34d3"
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
