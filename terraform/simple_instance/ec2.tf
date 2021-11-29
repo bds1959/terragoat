@@ -1,6 +1,7 @@
 provider "aws" {
-  profile = "${var.profile}"
-  region  = "${var.region}"
+access_key = "${var.aws_access_key}"
+secret_key = "${var.aws_secret_key}"
+region     = "${var.region}"
 }
 
 resource "aws_security_group" "ssh_traffic" {
