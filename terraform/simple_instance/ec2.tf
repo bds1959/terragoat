@@ -30,9 +30,9 @@ resource "aws_instance" "web_instance" {
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
-    git_commit           = "29fd1fa44520c14c897449ac04625c28e953a286"
+    git_commit           = "d286fb5ca4caa63ef62c5116f6535513ba4e91ae"
     git_file             = "terraform/simple_instance/ec2.tf"
-    git_last_modified_at = "2021-10-12 08:46:21"
+    git_last_modified_at = "2021-11-29 05:37:47"
     git_last_modified_by = "murali@banyandata.com"
     git_modifiers        = "murali"
     git_org              = "bds1959"
