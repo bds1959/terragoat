@@ -23,6 +23,7 @@ resource "aws_security_group" "ssh_traffic" {
     git_org              = "bds1959"
     git_repo             = "terragoat"
     yor_trace            = "5690d8f5-356b-4a1f-ba43-81cb21b7880e"
+    yor_name             = "ssh_traffic"
   }
 }
 
@@ -40,6 +41,7 @@ resource "aws_instance" "web_server_instance" {
     git_org              = "bds1959"
     git_repo             = "terragoat"
     yor_trace            = "33648582-045b-4d1f-be5a-114317b230e5"
+    yor_name             = "web_server_instance"
   }
 }
 
