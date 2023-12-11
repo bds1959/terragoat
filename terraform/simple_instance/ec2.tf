@@ -23,23 +23,26 @@ resource "aws_security_group" "ssh_traffic" {
     git_org              = "bds1959"
     git_repo             = "terragoat"
     yor_trace            = "5690d8f5-356b-4a1f-ba43-81cb21b7880e"
+    yor_name             = "ssh_traffic"
   }
 }
 
 resource "aws_instance" "web_server_instance" {
-  ami             = data.aws_ami.ubuntu.id
-  instance_type   = "t2.micro"
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t2.micro"
+
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
     Name                 = "bc_workshop_ec2"
-    git_commit           = "af437ea563d82ecfe6527683d243ba4d6f1aa563"
+    git_commit           = "566481a60bef1a0c36ab4c5c64cf6d5dfd0c0f7c"
     git_file             = "terraform/simple_instance/ec2.tf"
-    git_last_modified_at = "2021-10-12 04:05:55"
-    git_last_modified_by = "murali@banyandata.com"
+    git_last_modified_at = "2023-12-11 11:14:44"
+    git_last_modified_by = "murali@banyancloud.io"
     git_modifiers        = "murali"
     git_org              = "bds1959"
     git_repo             = "terragoat"
     yor_trace            = "33648582-045b-4d1f-be5a-114317b230e5"
+    yor_name             = "web_server_instance"
   }
 }
 
